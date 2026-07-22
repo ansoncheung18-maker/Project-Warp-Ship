@@ -1,6 +1,6 @@
 # Project Warp-Ship
 
-**Safe crew-capable warp ship for interstellar travel — 1,500-3,000c | 2-year one-way | 5-year round-trip | Safety First**
+**Safe crew-capable warp ship for interstellar travel — 10,000c | 20,000 light-years in 2 years | Safety First**
 
 ---
 
@@ -11,10 +11,11 @@ This project designs a **safe crew-capable warp ship** that integrates Project 8
 | Parameter | Value |
 |:---|:---|
 | Primary Goal | **Safe crew-capable interstellar warp ship** |
-| Cruise Speed | **1,500 – 3,000c** |
-| Warp Bubble Diameter | **1 km** |
+| Cruise Speed | **10,000c** (physical limit: ~50,000c) |
+| Warp Bubble Diameter | **150m** (ship + buffer space) |
 | One-way Mission Duration | **≤ 2 years** |
 | Round-trip Mission Duration | **≤ 5 years (including 1 year stay)** |
+| **2-Year Crew Range** | **20,000 light-years** |
 | Crew Capacity | **10 – 50 persons** |
 | Power Source | **Dyson Swarm + Storage Ring (1 day capacity)** |
 | Communication | **50,000c warp bubble comms (Project 9)** |
@@ -35,11 +36,25 @@ This project designs a **safe crew-capable warp ship** that integrates Project 8
 
 ---
 
+## ⚡ Speed Limit Reality
+
+| Speed Range | Feasibility | Reason |
+|:---|:---|:---|
+| < 1,000c | ✅ Extremely stable | Hawking radiation negligible |
+| 1,000 – 5,000c | ✅ Feasible | Active boundary stabilization required |
+| 5,000 – 10,000c | ✅ Feasible (Conservative) | Strong stabilization + radiation shielding |
+| 10,000 – 50,000c | ⚠️ Theoretical Limit | Hawking radiation increases rapidly |
+| > 50,000c | ❌ Not Realistic | Spacetime structure cannot withstand |
+
+> **"Physical speed limit for warp bubbles is estimated at 10,000 – 50,000c. Beyond this, spacetime itself may break down."**
+
+---
+
 ## 💡 Core Innovation
 
 | Innovation | Description |
 |:---|:---|
-| **1km Warp Bubble** | Inherited from Project 8 — sustains FTL travel at 1,500-3,000c |
+| **150m Warp Bubble** | Inherited from Project 8 — sustains FTL travel at 10,000c |
 | **Integrated FTL Communication** | Project 9 system enables real-time contact with Earth |
 | **Modular Ship Design** | Energy, propulsion, habitat, cargo modules |
 | **Crew Support Systems** | Life support, radiation shielding, artificial gravity |
@@ -55,7 +70,7 @@ Project 8: Warp Bubble Generator (1km³ Casimir Array)
 ↓
 Project 9: FTL Communication System (1mm warp bubbles, 50,000c)
 ↓
-Warp Ship Hull (1km bubble, crew habitat, cargo)
+Warp Ship Hull (150m bubble, crew habitat, cargo)
 ↓
 Life Support (Oxygen, Water, Food — Closed-loop)
 ↓
@@ -65,7 +80,7 @@ Artificial Gravity (Rotating Habitat Module)
 ↓
 Mission Profile: Accelerate → Cruise → Decelerate
 ↓
-Target: Vega (26 light-years, 3.17 days at 3,000c)
+Target: 20,000 light-years in 2 years (Galactic Center region)
 
 ---
 
@@ -73,10 +88,14 @@ Target: Vega (26 light-years, 3.17 days at 3,000c)
 
 | Parameter | Value |
 |:---|:---|
-| **Cruise Speed** | **1,500 – 3,000c** |
-| **Vega (26 ly) Journey** | **3.17 days at 3,000c** |
-| **100 ly Journey** | **12.17 days at 3,000c** |
-| **6,000 ly Journey (Max Crew Range)** | **2 years (one-way)** |
+| **Cruise Speed** | **10,000c** |
+| **2-Year Crew Range** | **20,000 light-years** |
+| **5-Year Round-trip Range** | **10,000 light-years** |
+| **Vega (26 ly) Journey** | **~0.95 days** |
+| **100 ly Journey** | **~3.65 days** |
+| **1,000 ly Journey** | **~36.5 days** |
+| **Galactic Center (26,000 ly)** | **~2.6 years** |
+| **Milky Way Edge (50,000 ly)** | **~5 years** |
 | **Warp Bubble Formation** | **< 0.01 seconds** |
 | **Field Stability** | **> 0.999** |
 | **Communication Speed** | **50,000c** |
@@ -86,11 +105,58 @@ Target: Vega (26 light-years, 3.17 days at 3,000c)
 
 ---
 
+## 🚀 Mission Profile
+
+### Phase 1: Departure
+
+| Step | Action | Time |
+|:---|:---|:---|
+| 1 | Crew boarding & system check | 2 days |
+| 2 | Storage ring charge (80% capacity) | 19.4 hours |
+| 3 | Warp bubble formation | < 0.01 seconds |
+| 4 | Acceleration to 10,000c | 1,000 seconds |
+
+### Phase 2: Cruise
+
+| Parameter | Value |
+|:---|:---|
+| Cruise Speed | 10,000c |
+| Maximum One-way Duration | 2 years |
+| **Maximum Crew Range** | **20,000 light-years** |
+| Communication Delay (1,000 ly) | ~7.3 days (one-way) |
+| Communication Delay (20,000 ly) | ~146 days (one-way) |
+| Energy Consumption | 1.5 × 10¹³ W |
+
+### Phase 3: Arrival
+
+| Step | Action | Time |
+|:---|:---|:---|
+| 1 | Deceleration to 0 | 1,000 seconds |
+| 2 | Warp bubble dissolution | < 1 second |
+| 3 | System check & mission report | 1 day |
+
+---
+
+## 📊 Speed vs Distance (10,000c)
+
+| Destination | Distance | Travel Time |
+|:---|:---|:---|
+| Moon | 0.000000004 ly | ~0.00000001 seconds |
+| Mars | 0.0000007 ly | ~0.0000002 seconds |
+| Proxima Centauri | 4.24 ly | **~3.7 hours** |
+| Vega | 26 ly | **~0.95 days** |
+| Orion Nebula | 1,344 ly | **~49 days** |
+| Galactic Center | 26,000 ly | **~2.6 years** |
+| **2-Year Crew Range** | **20,000 ly** | **2 years** |
+| Milky Way Edge | 50,000 ly | **~5 years** |
+
+---
+
 ## 🔗 Technology Inheritance
 
 | Technology | Source Project | Application |
 |:---|:---|:---|
-| 1km Warp Bubble | Project 8 | FTL propulsion |
+| 150m Warp Bubble | Project 8 | FTL propulsion |
 | Casimir Array (1km³) | Project 8 | Negative energy generation |
 | Storage Ring | Project 8 | Energy storage (1 day capacity) |
 | FTL Communication | Project 9 | Ship-to-Earth comms |
@@ -111,37 +177,6 @@ Target: Vega (26 light-years, 3.17 days at 3,000c)
 | **Phase D** | ⏳ Planned | Digital twin simulation |
 | **Phase E** | ⏳ Planned | Operations plan |
 | **Phase F** | ⏳ Planned | Closeout plan |
-
----
-
-## 🚀 Mission Profile
-
-### Phase 1: Departure
-
-| Step | Action | Time |
-|:---|:---|:---|
-| 1 | Crew boarding & system check | 2 days |
-| 2 | Storage ring charge (80% capacity) | 19.4 hours |
-| 3 | Warp bubble formation | < 0.01 seconds |
-| 4 | Acceleration to 3,000c | 300 seconds |
-
-### Phase 2: Cruise
-
-| Parameter | Value |
-|:---|:---|
-| Cruise Speed | 3,000c |
-| Maximum One-way Duration | 2 years |
-| Maximum Crew Range | 6,000 light-years |
-| Communication Delay (6,000 ly) | ~44 days (one-way) |
-| Energy Consumption | 1.5 × 10¹³ W |
-
-### Phase 3: Arrival
-
-| Step | Action | Time |
-|:---|:---|:---|
-| 1 | Deceleration to 0 | 300 seconds |
-| 2 | Warp bubble dissolution | < 1 second |
-| 3 | System check & mission report | 1 day |
 
 ---
 
@@ -174,4 +209,4 @@ Target: Vega (26 light-years, 3.17 days at 3,000c)
 ---
 
 **Author:** Anson Cheung (Age 14)  
-**Last updated:** 2026-07-21
+**Last updated:** 2026-07-22
