@@ -13,12 +13,16 @@ This project designs a **safe crew-capable warp ship** that integrates Project 8
 | Primary Goal | **Safe crew-capable interstellar warp ship** |
 | Cruise Speed | **10,000c** (physical limit: ~50,000c) |
 | Warp Bubble Diameter | **150m** (ship + buffer space) |
+| Ship Size | **100m × 20m × 20m** |
+| **Storage Ring Diameter** | **100m** (20× smaller than Project 8) |
+| **Storage Ring Mass** | **~5 tons** (20× lighter than Project 8) |
 | One-way Mission Duration | **≤ 2 years** |
 | Round-trip Mission Duration | **≤ 5 years (including 1 year stay)** |
 | **2-Year Crew Range** | **20,000 light-years** |
 | Crew Capacity | **10 – 50 persons** |
 | Power Source | **Dyson Swarm + Storage Ring (1 day capacity)** |
 | Communication | **50,000c warp bubble comms (Project 9)** |
+| Ship Mass | **~3,255 tons** |
 | Design Life | **30 years** |
 | **Design Philosophy** | **SAFETY FIRST — Redundancy, Fault Tolerance, Human Health** |
 
@@ -55,6 +59,7 @@ This project designs a **safe crew-capable warp ship** that integrates Project 8
 | Innovation | Description |
 |:---|:---|
 | **150m Warp Bubble** | Inherited from Project 8 — sustains FTL travel at 10,000c |
+| **100m Storage Ring** | 20× smaller than Project 8, 5 tons, fits inside ship |
 | **Integrated FTL Communication** | Project 9 system enables real-time contact with Earth |
 | **Modular Ship Design** | Energy, propulsion, habitat, cargo modules |
 | **Crew Support Systems** | Life support, radiation shielding, artificial gravity |
@@ -63,10 +68,28 @@ This project designs a **safe crew-capable warp ship** that integrates Project 8
 
 ---
 
+## 📊 Storage Ring Size Comparison
+
+| Parameter | Project 8 (1km bubble) | Project 10 (150m bubble) | Reduction |
+|:---|:---|:---|:---|
+| Warp Bubble Diameter | 1,000m | **150m** | 6.7× smaller |
+| Energy Requirement | 2.0 × 10¹⁴ J | **~6.8 × 10¹¹ J** | 294× less |
+| **Storage Ring Diameter** | **2,000m** | **100m** | **20× smaller** |
+| **Storage Ring Mass** | **100 tons** | **~5 tons** | **20× lighter** |
+
+> **"By shrinking the warp bubble from 1km to 150m, the storage ring shrinks from 2km to 100m — from 100 tons to just 5 tons, fitting perfectly inside the ship."**
+
+---
+
 ## 🛸 System Architecture
+
+```
+
 Dyson Swarm (Energy Source)
 ↓
 Project 8: Warp Bubble Generator (1km³ Casimir Array)
+↓
+100m Storage Ring (5 tons, 1 day capacity)
 ↓
 Project 9: FTL Communication System (1mm warp bubbles, 50,000c)
 ↓
@@ -81,6 +104,8 @@ Artificial Gravity (Rotating Habitat Module)
 Mission Profile: Accelerate → Cruise → Decelerate
 ↓
 Target: 20,000 light-years in 2 years (Galactic Center region)
+
+```
 
 ---
 
@@ -101,7 +126,7 @@ Target: 20,000 light-years in 2 years (Galactic Center region)
 | **Communication Speed** | **50,000c** |
 | **Data Capacity** | **6.24 MB / bubble** |
 | **Power Consumption** | **1.0 × 10¹⁵ W** |
-| **Ship Mass** | **~3,350 tons** |
+| **Ship Mass** | **~3,255 tons** |
 
 ---
 
@@ -157,8 +182,8 @@ Target: 20,000 light-years in 2 years (Galactic Center region)
 | Technology | Source Project | Application |
 |:---|:---|:---|
 | 150m Warp Bubble | Project 8 | FTL propulsion |
-| Casimir Array (1km³) | Project 8 | Negative energy generation |
-| Storage Ring | Project 8 | Energy storage (1 day capacity) |
+| 1km³ Casimir Array | Project 8 | Negative energy generation |
+| **100m Storage Ring** | **Project 8 (scaled down)** | **Energy storage (5 tons)** |
 | FTL Communication | Project 9 | Ship-to-Earth comms |
 | Dyson Swarm Energy | Project 7 | Primary power supply |
 | Fusion Backup | Project 4 | Emergency power |
