@@ -1,159 +1,286 @@
-# Phase A：概念總覽 — 曲率泡載人飛船
-**專案**：曲率泡載人飛船 (Project Warp-Ship)  
-**版本**：2.0  
-**日期**：2026-07-22  
-**作者**：Anson Cheung（14歲）  
-**定位**：呢份文件定義 Project Warp-Ship 嘅核心概念、安全設計哲學、技術路線同任務目標。版本 2.0 已更新儲存環尺寸（2km → 100m）。
+# Project Warp-Ship
 
+**Safe crew-capable warp ship for interstellar travel — 10,000c | 20,000 light-years in 2 years | Safety First**
 
-## 1. 專案總覽
+---
 
-| 項目 | 詳情 |
+## 🚀 Mission Overview
+
+This project designs a **safe crew-capable warp ship** that integrates:
+- **Project 8 (Warp Drive)** — Casimir array as spacetime distortion **trigger**
+- **Project 9 (Warp-Communication)** — FTL communication system
+- **Project 7 (Dyson Swarm)** — Primary energy source
+
+**Safety is the highest design principle** — ensuring crew health and survival during 2-year one-way / 5-year round-trip interstellar missions.
+
+| Parameter | Value |
 |:---|:---|
-| **專案名稱** | 曲率泡載人飛船 (Project Warp-Ship) |
-| **核心目標** | 設計一架可安全載人嘅曲率泡飛船，實現 10,000c 星際航行 |
-| **設計哲學** | **安全第一 — 冗餘、容錯、人類健康** |
-| **目標速度** | 10,000c（物理上限 ~50,000c） |
-| **曲率泡直徑** | 150m（飛船 + 緩衝空間） |
-| **飛船尺寸** | 100m × 20m × 20m |
-| **儲存環直徑** | **100m**（比 Project 8 細 20 倍） |
-| **儲存環質量** | **~5 噸**（比 Project 8 輕 20 倍） |
-| **船員數量** | 10 – 50 人 |
-| **任務時間** | 單程 ≤ 2 年，來回 ≤ 5 年 |
-| **任務範圍** | **20,000 光年（2 年內）** |
-| **能量來源** | Dyson Swarm + 儲存環（1 日產能） |
-| **通訊系統** | 50,000c 曲率泡通訊（Project 9） |
-| **設計壽命** | 30 年 |
+| Primary Goal | **Safe crew-capable interstellar warp ship** |
+| Cruise Speed | **10,000c** (physical limit: ~50,000c) |
+| Warp Bubble Diameter | **150m** (ship + buffer space) |
+| Ship Size | **100m × 20m × 20m** |
+| Primary Energy Source | **Dyson Swarm (Project 7)** |
+| Warp Trigger | **Casimir Array (Project 8)** |
+| One-way Mission Duration | **≤ 2 years** |
+| Round-trip Mission Duration | **≤ 5 years (including 1 year stay)** |
+| **2-Year Crew Range** | **20,000 light-years** |
+| Crew Capacity | **10 – 50 persons** |
+| Communication | **50,000c warp bubble comms (Project 9)** |
+| Ship Mass | **~3,500 tons** |
+| Design Life | **30 years** |
+| **Design Philosophy** | **SAFETY FIRST — Redundancy, Fault Tolerance, Human Health** |
 
 
-## 2. 設計哲學：安全第一
+---
 
-### 2.1 核心原則
+## 🔬 Technical Review & Repositioning
 
-| 原則 | 說明 |
+### The Discovery
+
+During the integration of Project 8 (Warp Drive) and Project 9 (Communication), a critical physics constraint was identified:
+
+| Issue | Explanation |
 |:---|:---|
-| **冗餘設計** | 所有關鍵系統都有備份（N+1 設計） |
-| **故障容錯** | 單點故障唔會導致任務失敗 |
-| **人類健康** | 人工重力、輻射屏蔽、心理支援 |
-| **安全返回** | 任何時候都可以啟動「緊急返回」程序 |
-| **生命維持** | 封閉式生態系統，5 年自給自足 |
+| **Casimir Effect Energy Density** | The negative energy output of a 1km³ Casimir array is far lower than initially estimated |
+| **Energy Density Limit** | Casimir energy density scales with 1/d⁴ — macroscopic amplification is extremely difficult |
+| **Mass-Energy Cancellation** | The positive mass of the array structure cancels out the negative energy produced |
 
-### 2.2 安全設計架構
+### The Repositioning
 
-| 子系統 | 安全設計 |
-|:---|:---|
-| **能源系統** | Dyson Swarm + 儲存環 + 核聚變備用 |
-| **推進系統** | 場腔固定 + AI 實時穩定 + 冗餘 Casimir 陣列 |
-| **生命維持** | 封閉式生態系統 + 備用補給 |
-| **輻射防護** | 水屏蔽層 + 鉛屏蔽 + 輻射避難區 |
-| **人工重力** | 旋轉居住模塊（模擬地球重力） |
-| **通訊系統** | 冗餘通訊鏈路 |
-| **返回系統** | 隨時可啟動嘅緊急返回程序 |
-
-
-## 3. 飛船設計
-
-### 3.1 飛船尺寸
-
-| 參數 | 數值 | 備註 |
-|:---|:---|:---|
-| 總長度 | 100 m | 5 個 20m 模塊 |
-| 總直徑 | 20 m | 環形 / 圓柱形 |
-| 曲率泡直徑 | 150 m | 飛船 + 緩衝空間 |
-| **儲存環直徑** | **100 m** | **比 Project 8 細 20 倍** |
-| 內部體積 | ~4,000 m³ | 足夠 15 人生活 |
-| 總質量 | **~3,255 噸** | 比 Project 8 輕 ~100 噸 |
-
-### 3.2 儲存環縮小對比
-
-| 參數 | Project 8 (1km 曲率泡) | Project 10 (150m 曲率泡) | 縮小比例 |
+| Project | Original Role | Revised Role | Impact |
 |:---|:---|:---|:---|
-| 曲率泡直徑 | 1,000m | **150m** | **6.7 倍** |
-| 能量需求 | 2.0 × 10¹⁴ J | **~6.8 × 10¹¹ J** | **294 倍** |
-| **儲存環直徑** | **2,000m** | **100m** | **20 倍** |
-| **儲存環質量** | **100 噸** | **~5 噸** | **20 倍** |
+| **Project 8 (Warp Drive)** | Primary energy source | **Spacetime distortion "trigger"** — Dyson Swarm provides the main energy | ✅ Core design unchanged |
+| **Project 9 (Communication)** | 1mm warp bubble comms | **Unchanged** — microscale warp bubbles require negligible energy | ✅ Fully valid |
+| **Project 10 (Warp Ship)** | Integrate all systems | **Uses revised energy architecture** | ✅ Design updated |
 
-> **「將曲率泡由 1km 縮小到 150m，儲存環直徑可以由 2km 縮小到 100m，質量由 100 噸降到 5 噸，完全適合整合到 100m 飛船入面。」**
+### Revised Energy Architecture
 
-### 3.3 空間分配（15 人團隊）
+```
 
-| 空間類別 | 面積 | 備註 |
+Dyson Swarm (Primary Energy, 99.99%)
+↓
+Superconducting Storage Ring (Energy Storage)
+↓
+Casimir Array (Negative Energy "Seed", 0.01%)
+↓
+Alcubierre Metric Engine (Spacetime Distortion)
+↓
+Warp Bubble (Sustained by Dyson Swarm Energy)
+
+```
+
+### Impact on Project 8 & 9
+
+| Project | Impact | Status |
 |:---|:---|:---|
-| 私人睡眠艙 | 45 m² | 每人 3m² |
-| 公共生活區 | 75 m² | 休息、社交、娛樂 |
-| 廚房 / 飯堂 | 30 m² | 煮食、用餐 |
-| 醫療 / 健身區 | 40 m² | 運動設備、醫療站 |
-| 指揮中心 | 30 m² | 駕駛、導航、通訊 |
-| 科學實驗區 | 40 m² | 科研、觀測 |
-| 儲存 / 補給 | 50 m² | 食物、水、備用零件 |
-| 輻射避難區 | 30 m² | 太陽風暴時使用 |
-| 走廊 / 接駁 | 60 m² | 通道、氣閘 |
-| **總生活空間** | **~400 m²** | |
-
-### 3.4 每人空間對比
-
-| 航天器 | 每人空間 | 任務時間 |
-|:---|:---|:---|
-| Apollo 指揮艙 | 2 m³ | 數日 |
-| ISS (國際太空站) | 65 m³ | 6 個月 |
-| Starship (載人版) | 10 m³ | 數月 |
-| **Project 10 (曲率泡飛船)** | **~267 m³** | **5 年** |
+| **Project 8** | Energy source changed from Casimir to Dyson Swarm; Casimir becomes "trigger" | ✅ Core design valid |
+| **Project 9** | Completely unaffected | ✅ Fully valid |
+| **Project 10** | Uses revised energy architecture | ✅ Design baseline |
 
 
-## 4. 性能目標
+---
 
-### 4.1 速度與距離
+## 🛡️ Safety-First Design Principles
 
-| 距離 | 航行時間 (10,000c) | 備註 |
-|:---|:---|:---|
-| 比鄰星 (4.24 光年) | ~3.7 小時 | 太陽系鄰近 |
-| 織女星 (26 光年) | ~0.95 日 | 目標星體 |
-| 獵戶座星雲 (1,344 光年) | ~49 日 | 星雲探索 |
-| 銀河系中心 (26,000 光年) | ~2.6 年 | 極限範圍 |
-| **20,000 光年** | **2 年** | **載人任務範圍** |
-
-### 4.2 速度上限（物理限制）
-
-| 速度範圍 | 可行性 | 原因 |
-|:---|:---|:---|
-| < 1,000c | ✅ 極度穩定 | 霍金輻射極弱 |
-| 1,000 – 5,000c | ✅ 可行 | 需要主動邊界穩定 |
-| 5,000 – 10,000c | ✅ 可行（保守） | 需要強穩定 + 輻射屏蔽 |
-| 10,000 – 50,000c | ⚠️ 理論極限 | 霍金輻射急劇增加 |
-| > 50,000c | ❌ 不現實 | 時空結構無法承受 |
-
-
-## 5. 技術繼承
-
-| 技術 | 來源 Project | 應用 |
-|:---|:---|:---|
-| 150m 曲率泡 | Project 8 | FTL 推進 |
-| 1km³ Casimir 陣列 | Project 8 | 負能量產生 |
-| **100m 儲存環** | **Project 8（縮小版）** | **能量儲存** |
-| 50,000c 通訊 | Project 9 | 飛船 ↔ 地球 |
-| Dyson Swarm 能源 | Project 7 | 主電源 |
-| 核聚變備用 | Project 4 | 緊急電源 |
-| AI 控制 | Project 6 | 飛行控制 |
-| 星際運輸 | Project 5 | 組件運送 |
-
-
-## 6. 主要挑戰同緩解措施
-
-| 挑戰 | 緩解措施 |
+| Principle | Description |
 |:---|:---|
-| 霍金輻射 | 場腔屏蔽 + 主動邊界穩定 |
-| 輻射暴露 | 水屏蔽層 + 鉛屏蔽 + 避難區 |
-| 微重力健康影響 | 人工重力（旋轉居住模塊） |
-| 5 年任務心理健康 | 公共空間、VR、心理支援 |
-| 曲率泡穩定性 | AI 實時監測 + 場腔固定 |
-| 緊急返回 | 隨時可啟動嘅返回程序 |
-| 儲存環尺寸 | 縮小到 100m（20 倍縮小） |
+| **Redundancy** | All critical systems have backups (N+1 design) |
+| **Fault Tolerance** | No single point of failure can abort the mission |
+| **Human Health** | Artificial gravity, radiation shielding, psychological support |
+| **Safe Return** | Emergency return procedure available at any time |
+| **Life Support** | Closed-loop ecosystem, 5-year self-sufficiency |
 
 
-## 7. 結論
+---
 
-> **「Project Warp-Ship 將設計一架可安全載人嘅曲率泡飛船，以 10,000c 航行，2 年內可到達 20,000 光年內嘅任何地方。儲存環由 2km 縮小到 100m，質量由 100 噸降到 5 噸，完全適合整合到 100m 飛船入面。安全係最高設計原則 — 冗餘系統、人工重力、輻射屏蔽、緊急返回，全部為咗確保船員喺 5 年來回任務中嘅健康同生存。」**
+## ⚡ Speed Limit Reality
+
+| Speed Range | Feasibility | Reason |
+|:---|:---|:---|
+| < 1,000c | ✅ Extremely stable | Hawking radiation negligible |
+| 1,000 – 5,000c | ✅ Feasible | Active boundary stabilization required |
+| 5,000 – 10,000c | ✅ Feasible (Conservative) | Strong stabilization + radiation shielding |
+| 10,000 – 50,000c | ⚠️ Theoretical Limit | Hawking radiation increases rapidly |
+| > 50,000c | ❌ Not Realistic | Spacetime structure cannot withstand |
+
+> **"Physical speed limit for warp bubbles is estimated at 10,000 – 50,000c. Beyond this, spacetime itself may break down."**
 
 
-**專案負責人：** Anson Cheung（14歲）  
-**最後更新：** 2026-07-22
+---
+
+## 💡 Core Innovation
+
+| Innovation | Description |
+|:---|:---|
+| **150m Warp Bubble** | Inherited from Project 8 — sustains FTL travel at 10,000c |
+| **Dyson Swarm Power** | Primary energy source (99.99%) |
+| **Casimir "Trigger"** | Generates negative energy seed (0.01%) to start spacetime distortion |
+| **Integrated FTL Communication** | Project 9 system enables real-time contact with Earth |
+| **Modular Ship Design** | Energy, propulsion, habitat, cargo modules |
+| **Crew Support Systems** | Life support, radiation shielding, artificial gravity |
+| **Entry/Exit Procedures** | Safe bubble entry and exit protocols |
+| **Emergency Return** | Always-available safe return capability |
+
+
+---
+
+## 🛸 System Architecture
+
+```
+
+Dyson Swarm (Primary Energy)
+↓
+Project 7: Energy Collection
+↓
+Superconducting Storage Ring (500m, 1 day capacity)
+↓
+Project 8: Casimir Array (Negative Energy "Trigger")
+↓
+Alcubierre Metric Engine → 150m Warp Bubble Formation (< 0.01 sec)
+↓
+Project 9: FTL Communication System (1mm warp bubbles, 50,000c)
+↓
+AI Dynamic Field Feedback (100 MHz)
+↓
+Crew Support: Artificial Gravity + Radiation Shielding + Life Support
+↓
+Mission Profile: Accelerate → Cruise → Decelerate
+↓
+Target: 20,000 light-years in 2 years
+
+```
+
+
+---
+
+## 📊 Performance Summary
+
+| Parameter | Value |
+|:---|:---|
+| **Cruise Speed** | **10,000c** |
+| **2-Year Crew Range** | **20,000 light-years** |
+| **5-Year Round-trip Range** | **10,000 light-years** |
+| **Vega (26 ly) Journey** | **~0.95 days** |
+| **100 ly Journey** | **~3.65 days** |
+| **1,000 ly Journey** | **~36.5 days** |
+| **Galactic Center (26,000 ly)** | **~2.6 years** |
+| **Warp Bubble Formation** | **< 0.01 seconds** |
+| **Field Stability** | **> 0.999** |
+| **Communication Speed** | **50,000c** |
+| **Data Capacity** | **6.24 MB / bubble** |
+| **Primary Energy** | **Dyson Swarm (99.99%)** |
+| **Trigger Energy** | **Casimir Array (0.01%)** |
+| **Ship Mass** | **~3,500 tons** |
+
+
+---
+
+## 🚀 Mission Profile
+
+### Phase 1: Departure
+
+| Step | Action | Time |
+|:---|:---|:---|
+| 1 | Crew boarding & system check | 2 days |
+| 2 | Storage ring charge (from Dyson Swarm) | 19.4 hours |
+| 3 | Casimir array generates negative energy "seed" | < 0.01 seconds |
+| 4 | Warp bubble formation | < 0.01 seconds |
+| 5 | Acceleration to 10,000c | 1,000 seconds |
+
+### Phase 2: Cruise
+
+| Parameter | Value |
+|:---|:---|
+| Cruise Speed | 10,000c |
+| Maximum One-way Duration | 2 years |
+| **Maximum Crew Range** | **20,000 light-years** |
+| Communication Delay (1,000 ly) | ~7.3 days (one-way) |
+| Energy Source (Cruise) | Storage ring (pre-charged) |
+
+### Phase 3: Arrival
+
+| Step | Action | Time |
+|:---|:---|:---|
+| 1 | Deceleration to 0 | 1,000 seconds |
+| 2 | Warp bubble dissolution | < 1 second |
+| 3 | System check & mission report | 1 day |
+
+
+---
+
+## 📊 Speed vs Distance (10,000c)
+
+| Destination | Distance | Travel Time |
+|:---|:---|:---|
+| Proxima Centauri | 4.24 ly | **~3.7 hours** |
+| Vega | 26 ly | **~0.95 days** |
+| Orion Nebula | 1,344 ly | **~49 days** |
+| Galactic Center | 26,000 ly | **~2.6 years** |
+| **2-Year Crew Range** | **20,000 ly** | **2 years** |
+
+
+---
+
+## 🔗 Technology Inheritance
+
+| Technology | Source Project | Application |
+|:---|:---|:---|
+| 150m Warp Bubble | Project 8 | FTL propulsion |
+| Casimir Array (1km³) | Project 8 | Spacetime trigger |
+| Storage Ring | Project 8 | Energy storage |
+| **Dyson Swarm Energy** | **Project 7** | **Primary power supply (99.99%)** |
+| FTL Communication | Project 9 | Ship-to-Earth comms |
+| Fusion Backup | Project 4 | Emergency power |
+| AI Control | Project 6 | Flight control |
+| Ship Transport | Project 5 | Component delivery |
+
+
+---
+
+## 📊 Project Progress (Phase A-F)
+
+| Phase | Status | Description |
+|:---|:---|:---|
+| **Phase A** | 🚧 In Progress | Concept design, energy architecture, safety design |
+| **Phase B** | ⏳ Planned | System specifications, subsystem design, FMEA |
+| **Phase C** | ⏳ Planned | CAD drawings, BOM, manufacturing, assembly |
+| **Phase D** | ⏳ Planned | Digital twin simulation |
+| **Phase E** | ⏳ Planned | Operations plan |
+| **Phase F** | ⏳ Planned | Closeout plan |
+
+
+---
+
+## 🔗 Related Projects
+
+- [Project Warp Drive](https://github.com/ansoncheung18-maker/Project-Warp-Drive) — Warp bubble generation (Casimir trigger)
+- [Project Warp-Communication](https://github.com/ansoncheung18-maker/Project-Warp-Communication) — FTL communication
+- [Project Dyson Swarm Genesis](https://github.com/ansoncheung18-maker/Project-Dyson-Swarm-Genesis) — Primary power supply
+- [Project Fusion Spaceship](https://github.com/ansoncheung18-maker/Project-Fusion-Spaceship) — Interplanetary transport
+
+
+---
+
+## 📚 Key References
+
+- Alcubierre, M. (1994). "The Warp Drive: Hyper-fast travel within general relativity"
+- Lamoreaux, S.K. (1997). "Demonstration of the Casimir Force"
+- Munday, J.N. et al. (2009). "Measured Long-Range Repulsive Casimir-Lifshitz Forces"
+- NASA Breakthrough Propulsion Physics Program
+- Dyson Swarm Feasibility Studies (Project 7)
+- NASA Human Research Program — Spaceflight Health Standards
+
+
+---
+
+## 🎯 Next Steps
+
+1. **Phase A** — Concept design with revised energy architecture
+2. **Phase B** — Detailed system specifications and subsystem design
+3. **Phase C** — Engineering CAD and manufacturing process
+
+
+---
+
+**Author:** Anson Cheung (Age 14)  
+**Last updated:** 2026-07-23
